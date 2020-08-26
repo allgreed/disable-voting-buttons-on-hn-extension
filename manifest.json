@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Disable Voting Buttons on HN",
+  "version": "1.0",
+
+  "description": "Literally removes the voting buttons on Hacker News",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.news.ycombinator.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
